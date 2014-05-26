@@ -1,0 +1,29 @@
+{
+  "name": "vincent",
+  "version": "0.0.1",
+  "description": "Vincent is a tiny bot for spying and saving tweets which you want.",
+  "license": "MIT",
+  "homepage": "https://github.com/madebysource/vincent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madebysource/vincent"
+  },
+  "author": "Petr Brzek",
+  "license": "MIT",
+  "bugs": "https://github.com/madebysource/vincent/issues",
+  "keywords": [
+    "bot",
+    "twitter",
+    "tweets"
+  ],
+  "author": "Petr Brzek <petrbrzek@abdoc.net>",
+  "dependencies": {
+    "twit": "~1.1.15",
+    "lodash": "~2.4.1",
+    "firebase": "~1.0.15"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
