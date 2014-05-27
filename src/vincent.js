@@ -3,16 +3,11 @@ var Firebase = require('firebase');
 
 function Vincent(url) {
   this.firebase = new Firebase(url);
-  this.gotSettings = 0;
 }
 
 Vincent.prototype.start = function(callback) {
   // Call getSettings
-  if (this.gotSettings == 0) {
-    this.getSettings(callback);
-  } else {
-    callback(this.settingsArr);
-  }
+  this.getSettings(callback);
 }
 
 Vincent.prototype.getSettings = function(callback) {
@@ -21,7 +16,6 @@ Vincent.prototype.getSettings = function(callback) {
   var firebaseFn = function(data) {
     self.prepareSettings(data.val());
     self.firebaseData = data.val();
-    self.gotSettings = 1;
     callback(self.settingsArr);
   };
   this.firebase.once('value', firebaseFn);
