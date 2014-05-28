@@ -98,6 +98,7 @@ VincentTwitter.prototype.getTweets = function(config, counter, callback) {
 
       if (end == queries.length && self.syncCounter == self.settingsLen) {
         callback(self.data, self.lastId);
+        self.syncCounter = 0;
       }
     });
   };
