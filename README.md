@@ -8,7 +8,7 @@ Run ```npm install vincent```
 
 ## Documentation
 
-Vincent uses Firebase for reading saving and reading tweets.
+Vincent uses Firebase for reading and saving tweets.
 
 **Step 1**: Sign up on [Firebase.com](https://www.firebase.com/)
 
@@ -39,14 +39,14 @@ Vincent uses Firebase for reading saving and reading tweets.
       access_token_secret: '...',
     });
     
-    // Then start to spy like this
+    // Then start to spying like this
     botik.start(function(settings) {
       botik.spyOn(function(result) {
         twitter.now(settings, result);
       });
     });
     
-    // Get all results from Vincent
+    // Get all results like this
     botik.start(function() {
         var data = botik.getData();
         console.log(data);
@@ -74,7 +74,7 @@ Vincent uses Firebase for reading saving and reading tweets.
         exclude-1: "JustinBieber"
         ...
         
-– Queries that Vincent's searching
+– Queries that Vincent search
 
     settings:
       queries:
