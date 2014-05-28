@@ -1,7 +1,7 @@
 var Vincent = require('./src/vincent');
 var VincentTwitter = require('./services/twitter');
 var exportObj = {
-  vincent: Vincent,
+  core: Vincent,
   twitter: VincentTwitter
 }
 module.exports = exportObj
