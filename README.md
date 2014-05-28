@@ -59,7 +59,7 @@ Vincent uses Firebase for reading and saving tweets.
 
 ## Firebase settings options
 
-– You can exclude tweets:
+– You can exclude tweets (optional):
 
     settings:
       excludeTweets:
@@ -67,14 +67,14 @@ Vincent uses Firebase for reading and saving tweets.
         exclude-2: "Bla Bla Justin Bieber"
         ...
       
-– You can exclude users:
+– You can exclude users (optional):
 
     settigns:
       excludeUsers:
         exclude-1: "JustinBieber"
         ...
         
-– Queries that Vincent search
+– Queries that Vincent search:
 
     settings:
       queries:
@@ -86,12 +86,12 @@ Vincent uses Firebase for reading and saving tweets.
           lastId: 0
         ...
         
-– User has more than `n` followers
+– User has more than `n` followers (optional):
 
     settings:
       userHasAtLeastFollowers: 120
       
-– Ratio between followers and following
+– Ratio between followers and following (optional):
 
     settings:
       ratioBetweenFollowersAndFriends: 1.2
