@@ -81,7 +81,7 @@ Vincent uses Firebase for reading and saving tweets.
         query-1:
           name: "nodejs.org"
           lastId: 0
-        query-1:
+        query-2:
           name: "Node.js"
           lastId: 0
         ...
